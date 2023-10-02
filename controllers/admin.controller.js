@@ -55,7 +55,7 @@ async function updateProduct(req, res, next) {
     next(error);
     return;
   }
-  
+
   res.redirect('/admin/products');
 }
 
@@ -67,6 +67,7 @@ async function deleteProduct(req, res, next) {
   } catch (error) {
     return next(error);
   }
+
   res.json({ message: 'Deleted product!' });
 }
 
